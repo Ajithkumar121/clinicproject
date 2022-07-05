@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Login</title>
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="text" name="username" id="username" placeholder="username">
+            <input type="password" name="pass" id="pass" placeholder="password">
+           <div class="btns">
+            <a href="{% url 'clinicapp:details' %}" role="button" id="log-in">Login</a>
+            <a href="{% url 'clinicapp:registration' %}" role="button" id="sign-up">Sign Up</a>
+           </div>
+
+        </form>
+    </div>
+</body>
+</html>

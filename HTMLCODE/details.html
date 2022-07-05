@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+button {
+text-align:Left;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 50%;
+  margin-top: -1px;
+}
+</style>
+
+
+</head>
+<body>
+<h2> BOOKINGS </h2>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Name</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+    </div>
+    <div class="form-group col-md-5">
+      <label for="inputPassword4">DOB</label>
+      <input type="date" class="form-control" id="inputPassword4" placeholder="">
+    </div>
+  </div>
+  <div class="form-now col-md-5">
+    <label for="age">Age</label>
+    <input type="number" class="form-control" id="age" placeholder="Age">
+  </div>
+
+  <div class="group-now col-md-5">
+    <label for="inputGender">Gender</label>
+          <select id="inputGender" class="form-control">
+        <option selected>Male</option>
+        <option>Female</option>
+            <option>Other</option>
+      </select>
+  </div>
+
+    <div class="from-now col-md-5">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+  </div>
+
+    <div class="from-now col-md-5">
+    <label for="number">Number</label>
+    <input type="number" class="form-control" id="number" placeholder="Mobile Number">
+  </div>
+
+  <div class="form-group col-md-5">
+    <label for="inputAddress">Address 1</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+
+  <div class="form-group col-md-5">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+
+  <div class="group-now col-md-5">
+    <label for="Bloodgroup">Bloodgroup</label>
+          <select id="Bloodgroup" class="form-control">
+        <option selected>A+</option>
+        <option>B+</option>
+            <option>AB+</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>A-</option>
+            <option>B_</option>
+      </select>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    </div>
+    <div class="form-group col-md-5">
+      <label for="inputdep">State</label>
+      <select id="inputdep" class="form-control">
+        <option >Wayanad</option>
+        <option>Pathanamthitta</option>
+        <option>Kottayam</option>
+        <option>Kollam</option>
+        <option>Pathanamthitta</option>
+        <option>Alappuzha</option>
+        <option>Thrissur</option>
+      </select>
+    </div>
+
+
+<!--<div class="dropdown-center">-->
+<!--  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--    Department-->
+<!--  </button>-->
+<!--    <select class="dropdown-menu" aria-labelledby="dropdownCenterBtn">-->
+<!--    <option>Aurthopedic</option>-->
+<!--    <option >Neurosurgeon</option>-->
+<!--    <option >Child specialist</option>-->
+
+<!--    </select>-->
+<!--</div>-->
+
+<!--  <div class="form-group">-->
+<!--      <label for="inputdep">Department</label>-->
+<!--      <select id="inputdep" class="form-control">-->
+<!--        <option ></option>-->
+<!--        <option>Pathanamthitta</option>-->
+<!--        <option>Kottayam</option>-->
+<!--        <option>Kollam</option>-->
+<!--        <option>Pathanamthitta</option>-->
+<!--      </select>-->
+<!--  </div>-->
+
+
+</form>
+
+<form class="form-group col-md-8">
+  <a class="btn btn-primary" href="{% url 'clinicapp:book' %}" role="button">BOOK IN</a>
+</form>
+
+</body>
+</html>
